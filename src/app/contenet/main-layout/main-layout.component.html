@@ -1,0 +1,26 @@
+<nav class="navbar bg-primary">
+  <h1>Management</h1>
+
+  <ul>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/', '' ]">Home</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/', 'c']">create</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/', 'e']">edit</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/', 's']">see</a>
+    </li>
+
+  </ul>
+</nav>
+
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
